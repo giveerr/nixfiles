@@ -23,7 +23,7 @@ in {
     ./gtk.nix
     ./kdeconnect.nix
     ./packages.nix
-    ./spicetify.nix
+    # ./spicetify.nix
     ./xdg.nix
     ./zathura.nix
   ];

@@ -50,8 +50,7 @@ in {
         outputHash = "sha256-dR6veXCGVMr5TbCvP0EqyQKTG2XM65VHF9U2nRWyzfA=";
       });
 
-      # temp fix until https://github.com/rharish101/ReGreet/issues/32 is solved
-      patches = [../pkgs/regreet.patch];
+      # temp fix until https://github.com/rharish101/ReGreet/issues/32 is solve
     });
 
     settings = {

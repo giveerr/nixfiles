@@ -2,6 +2,7 @@
   self,
   inputs,
   default,
+  pkgs,
   ...
 }: let
   # system-agnostic args

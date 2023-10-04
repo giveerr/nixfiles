@@ -10,16 +10,6 @@
   # enable zsh autocompletion for system packages (systemd, etc)
   environment.pathsToLink = ["/share/zsh"];
 
-  i18n = {
-    defaultLocale = "en_US.UTF-8";
-    # saves space
-    supportedLocales = [
-      "en_US.UTF-8/UTF-8"
-      "ja_JP.UTF-8/UTF-8"
-      "ro_RO.UTF-8/UTF-8"
-    ];
-  };
-
   # graphics drivers / HW accel
   hardware.opengl.enable = true;
 

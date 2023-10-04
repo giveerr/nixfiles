@@ -9,6 +9,7 @@
   environment.systemPackages = [
     # we need git for flakes
     pkgs.git
+    pkgs.neofetch
   ];
   environment.variables.FLAKE = "/home/giveerr/Documents/code/dotfiles";
 

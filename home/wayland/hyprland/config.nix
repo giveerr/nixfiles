@@ -15,6 +15,7 @@ in {
     env = _JAVA_AWT_WM_NONREPARENTING,1
     env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
     env = WLR_DRM_NO_ATOMIC,1
+    monitor=LVDS-1,1920x1080@59.93400,0x0,1
 
     # set cursor for HL itself
     exec-once = hyprctl setcursor ${pointer.name} ${toString pointer.size}
@@ -52,7 +53,7 @@ in {
     }
 
     input {
-      kb_layout = ro
+      kb_layout = tr
 
       # focus change on cursor move
       follow_mouse = 1

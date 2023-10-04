@@ -1,6 +1,7 @@
 {
   lib,
   self,
+  pkgs,
   ...
 }: {
   home = {
@@ -19,6 +20,11 @@
 
   # let HM manage itself when in standalone mode
   programs.home-manager.enable = true;
+
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhs;
+  };
 
   nixpkgs.overlays = [
     (final: prev: {

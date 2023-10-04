@@ -7,7 +7,7 @@
 {
   imports = [
     ./rnnoise.nix
-    ./spicetify.nix
+    # ./spicetify.nix
   ];
 
   home.packages = with pkgs; [
@@ -18,7 +18,7 @@
     # images
     imv
 
-    spotify-tui
+    # spotify-tui
   ];
 
   programs = {
@@ -34,19 +34,21 @@
   services = {
     playerctld.enable = true;
 
-    spotifyd = {
-      enable = true;
-      package = pkgs.spotifyd.override {withMpris = true;};
-      settings.global = {
-        autoplay = true;
-        backend = "pulseaudio";
-        bitrate = 320;
-        cache_path = "${config.xdg.cacheHome}/spotifyd";
-        device_type = "computer";
-        initial_volume = "100";
-        use_mpris = true;
-        volume_normalisation = false;
-      };
-    };
+    # spotifyd = {
+    # enable = true;
+    # package = pkgs.spotifyd.override {withMpris = true;};
+    # settings.global = {
+    # autoplay = true;
+    # backend = "pulseaudio";
+    # bitrate = 320;
+    # cache_path = "${config.xdg.cacheHome}/spotifyd";
+    # device_type = "computer";
+    # initial_volume = "100";
+    # use_mpris = true;
+    # username = "giveerr";
+    # password =
+    #     volume_normalisation = false;
+    #   };
+    # };
   };
 }
